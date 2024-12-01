@@ -1,0 +1,24 @@
+.main-manufacturers {
+  height: 728px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-manufacturers-background {
+  height: 100%;
+  width: 100%;
+
+  background-image: url('../images/background/Vector-middle.svg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-manufacturers-background-second {
+  height: 100%;
+  width: 100%;
+
+  background-image: url('../images/background/Second-middle.svg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

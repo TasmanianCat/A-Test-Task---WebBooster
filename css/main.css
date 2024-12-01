@@ -1,0 +1,7 @@
+@import url('main-benefits.css');
+@import url('main-manufacturers.css');
+@import url('main-operation-scheme.css');
+
+main {
+  flex: 1;
+}

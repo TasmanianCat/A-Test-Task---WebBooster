@@ -1,0 +1,27 @@
+.faq {
+  height: 1271px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.faq-background {
+  height: 100%;
+  max-height: 1271px;
+  width: 100%;
+
+  background-image: url('../images/background/Vector-bottom.svg');
+  background-position: bottom right;
+  background-size: cover;
+  transform: scaleX(1.025);
+}
+
+.faq-background-second {
+  height: 100%;
+  max-height: 1271px;
+  width: 100%;
+
+  background-image: url('../images/background/Second-bottom.png');
+  background-position: bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

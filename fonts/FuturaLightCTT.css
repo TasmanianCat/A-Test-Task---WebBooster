@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'FuturaLightCTT';
+  src: url('ofontruFuturaLightCTT.eot');
+  src: url('ofontruFuturaLightCTT.eot?#iefix') format('embedded-opentype'),
+    url('ofontruFuturaLightCTT.woff2') format('woff2'),
+    url('ofontruFuturaLightCTT.woff') format('woff'),
+    url('ofontruFuturaLightCTT.ttf') format('truetype'),
+    url('ofontruFuturaLightCTT.svg#FuturaLightCTT') format('svg');
+}

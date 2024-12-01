@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'FuturaDemiCTT';
+  src: url('ofontruFuturaDemiCTT.eot');
+  src: url('ofontruFuturaDemiCTT.eot?#iefix') format('embedded-opentype'),
+    url('ofontruFuturaDemiCTT.woff2') format('woff2'),
+    url('ofontruFuturaDemiCTT.woff') format('woff'),
+    url('ofontruFuturaDemiCTT.ttf') format('truetype'),
+    url('ofontruFuturaDemiCTT.svg#FuturaDemiCTT') format('svg');
+}

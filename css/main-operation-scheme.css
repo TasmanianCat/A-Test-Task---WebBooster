@@ -1,0 +1,27 @@
+.main-operation-scheme {
+  height: 1098px;
+  width: 100%;
+  overflow: hidden;
+  transform: translateY(60px);
+}
+
+.main-operation-scheme-background {
+  height: 100%;
+  width: 100%;
+}
+
+.main-operation-scheme-background-second {
+  height: 100%;
+  width: 100%;
+
+  background-image: url('../images/background/Second-middle-gray.svg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 118.75em) {
+  .main-operation-scheme {
+    transform: translateY(110px);
+  }
+}
