@@ -5,6 +5,24 @@ header {
   width: 100%;
   overflow: hidden;
   position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../images/background/Second-top.svg'),
+    url('../images/background/Vector-top.svg');
+  background-position: center center;
+  background-size: cover;
+  transform: scaleX(1.025);
 }
 
 /* NAVIGATION */
@@ -43,7 +61,7 @@ header {
   height: 3.5rem;
   width: 100%;
   max-width: 87rem;
-  padding: 0 2.25rem;
+  padding: 0 3.5rem;
 }
 
 .nav-logo {
@@ -94,14 +112,18 @@ header {
 }
 
 .nav-cta-phone-number p {
-  font-family: 'FuturaFuturisC';
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 1.125rem;
   color: rgba(255, 255, 255, 1);
   transition: opacity 0.2s ease-in-out;
 }
 
-.nav-cta-phone-number p span {
+.nav-cta-phone-number > p > .span-normal {
+  font-family: 'FuturaFuturisCRegular';
+  font-weight: 400;
+}
+
+.nav-cta-phone-number > p > .span-bold {
+  font-family: 'FuturaFuturisC';
   font-weight: 700;
 }
 
@@ -127,8 +149,8 @@ header {
   width: 100%;
 }
 
-/* Width 1280px */
-@media (max-width: 80em) {
+/* Width 1360px */
+@media (max-width: 85em) {
   .nav-links {
     display: none;
   }
@@ -138,32 +160,4 @@ header {
   h1 {
     font-size: 3rem;
   }
-}
-
-/* BACKGROUND FOR THE HEADER */
-.header-background {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-
-  background-image: url('../images/background/Vector-top.svg');
-  background-position: top center;
-  background-size: cover;
-  transform: scaleX(1.025);
-}
-
-.header-background-second {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-
-  background-image: url('../images/background/Second-top.svg');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
