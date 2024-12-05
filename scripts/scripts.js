@@ -25,3 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// Open / Close the Mobile Menu
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelector('.nav-links');
+  const openMenuButton = document.getElementById('openMenu');
+  const closeMenuButton = document.getElementById('closeMenu');
+
+  // Open Menu
+  openMenuButton.addEventListener('click', (event) => {
+    navLinks.classList.add('nav-links-visible');
+  });
+
+  // Close Menu
+  closeMenuButton.addEventListener('click', (event) => {
+    navLinks.classList.remove('nav-links-visible');
+  });
+
+  if (window.width > 1360) {
+    navLinks.style.display = 'none';
+  }
+});

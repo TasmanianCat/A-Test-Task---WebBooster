@@ -3,5 +3,10 @@
 @import url('main-operation-scheme.css');
 
 main {
+  display: flex;
   flex: 1;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }

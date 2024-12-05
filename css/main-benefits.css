@@ -1,0 +1,119 @@
+.main-benefits {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 87rem;
+  padding: 5.5rem 3.5rem 7.5rem 3.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid yellow;
+}
+
+.benefits-title h2 {
+  font-family: 'FuturaFuturisC';
+  font-size: 2.8125rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgba(17, 17, 17, 1);
+}
+
+.benefits-paragraph p {
+  font-family: 'FuturaBookC';
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: rgba(3, 3, 3, 1);
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-top: 1rem;
+}
+
+.benefits-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: min-content;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  margin: 3rem 0 1rem 0;
+  padding: 0 2rem;
+}
+
+.benefits-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 23.125rem;
+  min-height: 25.375rem;
+  padding: 2.25rem 1.25rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px 0px rgba(9, 38, 192, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.benefits-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-image: url('../images/card/card-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 10rem;
+}
+
+.card-img img {
+  display: block;
+  width: 100%;
+}
+
+.card-text {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.card-text h3,
+.card-text p {
+  text-align: center;
+}
+
+.card-text h3 {
+  font-family: 'FuturaFuturisC';
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  background: linear-gradient(98.78deg, #041080 -2.69%, #0926c0 88.26%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.card-text p {
+  font-family: 'FuturaBookC';
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(85, 85, 85, 1);
+  padding: 0.75rem 1.75rem 0 1.75rem;
+}
