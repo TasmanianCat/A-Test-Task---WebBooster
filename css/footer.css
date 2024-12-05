@@ -3,3 +3,39 @@ footer {
   width: 100%;
   background-color: rgba(51, 51, 51, 1);
 }
+
+/* Width 1280px */
+@media (max-width: 80em) {
+}
+
+/* Width 1180px */
+@media (max-width: 73.75em) {
+}
+
+/* Width 1080px */
+@media (max-width: 67.5em) {
+}
+
+/* Width 660px */
+@media (max-width: 41.25em) {
+}
+
+/* Width 600px */
+@media (max-width: 37.5em) {
+}
+
+/* Width 530px */
+@media (max-width: 33.125em) {
+}
+
+/* Width 460px */
+@media (max-width: 28.75em) {
+}
+
+/* Width 380px */
+@media (max-width: 23.75em) {
+}
+
+/* Width 330px */
+@media (max-width: 20.625em) {
+}

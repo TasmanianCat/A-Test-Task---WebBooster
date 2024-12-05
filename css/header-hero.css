@@ -429,6 +429,9 @@
 
 /* Width 330px */
 @media (max-width: 20.625rem) {
+  .hero-wrapper {
+    padding: 7.5rem 1rem;
+  }
   .title-span-1 {
     font-size: 1.5rem;
   }
@@ -440,5 +443,11 @@
 
   .title-span-3 {
     font-size: 1.3rem;
+  }
+  .form-head {
+    padding: 1rem 1.25rem;
+  }
+  .form-head h2 {
+    font-size: 1.1rem;
   }
 }
