@@ -26,6 +26,28 @@
   }
 }
 
+/* .main-manufacturers {
+  height: 728px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-manufacturers-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/background/Second-middle.svg'),
+    url('../images/background/Vector-middle.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+} */
+
 /* Width 1280px */
 @media (max-width: 80em) {
 }
