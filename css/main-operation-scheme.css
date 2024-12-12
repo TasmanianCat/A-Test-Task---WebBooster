@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  min-height: 1098px;
+  min-height: 63rem;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -38,7 +38,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 3.5rem;
+  padding: 3.5rem 3.5rem 5rem 3.5rem;
   transform: translateY(-60px);
   border: 2px solid yellow;
 }
@@ -71,17 +71,95 @@
 }
 
 /*! *********************** SCHEME ************************* */
+.box-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 1fr;
+  gap: 1rem;
+  width: 100%;
+  /* border: 1px solid red; */
+  z-index: 1;
+  padding: 2.5rem 2.75rem 2.5rem 1.75rem;
+}
+
+.scheme-box-right-3 .box-content {
+  padding: 2.5rem 2.75rem 2.5rem 1.75rem;
+  transform: translate(1.75rem, -1rem);
+}
+
+.scheme-box-left-4 .box-content {
+  padding: 2.5rem 5rem 2.5rem 1.75rem;
+}
+
+.scheme-box-left-5 .box-content {
+  padding: 2.5rem 5rem 2.5rem 1.75rem;
+  transform: translateX(1.75rem);
+}
+
+.scheme-box-left-6 .box-content {
+  padding: 2.5rem 2.5rem 2.5rem 1.75rem;
+  transform: translateX(1.75rem);
+}
+
+.box-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 1rem;
+}
+
+.box-head .box-number h3 {
+  font-family: 'FuturaFuturisC';
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  color: rgba(150, 154, 247, 1);
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 0;
+}
+
+.box-text-info {
+  padding: 0 0 0 3.75rem;
+}
+
+.box-head .box-title h4 {
+  font-family: 'FuturaFuturisC';
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  /* padding: 0.35rem 0 1.25rem 0; */
+}
+
+.box-text .box-text-info p {
+  font-family: 'FuturaBookC';
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: rgba(227, 227, 227, 1);
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 .operation-scheme-block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(min-content, 300px);
   width: 100%;
   max-width: 1280px;
-  border: 1px solid red;
+  padding: 1.5rem 0 2.5rem 0;
+  /* border: 1px solid red; */
 }
 
 .scheme-box-wrapper {
-  /* padding-top: 0.75rem; */
   /* border: 1px solid rgba(106, 255, 0, 0.77); */
 }
 /* Box 1 */
@@ -104,7 +182,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/scheme/1.svg');
+  background-image: url('../images/scheme/mask.png'),
+    url('../images/scheme/1.svg');
+  z-index: -1;
 }
 
 /* Box 2 */
@@ -128,7 +208,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/scheme/2.svg');
+  background-image: url('../images/scheme/mask.png'),
+    url('../images/scheme/2.svg');
+  z-index: -1;
 }
 
 /* Box 3 */
@@ -153,6 +235,24 @@
   width: 100%;
   height: 100%;
   background-image: url('../images/scheme/3.svg');
+  z-index: -2;
+}
+
+.scheme-box-right-3::after {
+  content: '';
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/scheme/mask.png');
+  transform: scaleX(1.15) translateX(-1.75rem);
+  z-index: -1;
 }
 
 /* Box 4 */
@@ -176,6 +276,24 @@
   width: 100%;
   height: 100%;
   background-image: url('../images/scheme/6.svg');
+  z-index: -2;
+}
+
+.scheme-box-left-4::after {
+  content: '';
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/scheme/mask.png');
+  transform: scaleX(1) translateX(-26px);
+  z-index: -1;
 }
 
 /* Box 5 */
@@ -200,6 +318,23 @@
   width: 100%;
   height: 100%;
   background-image: url('../images/scheme/5.svg');
+  z-index: -2;
+}
+
+.scheme-box-left-5::after {
+  content: '';
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/scheme/mask.png');
+  z-index: -1;
 }
 
 /* Box 6 */
@@ -224,6 +359,24 @@
   width: 100%;
   height: 100%;
   background-image: url('../images/scheme/4.svg');
+  z-index: -2;
+}
+
+.scheme-box-left-6::after {
+  content: '';
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/scheme/mask.png');
+  transform: scaleX(1.1) translateX(-16px);
+  z-index: -1;
 }
 
 /*! *********************** SCHEME ************************* */
