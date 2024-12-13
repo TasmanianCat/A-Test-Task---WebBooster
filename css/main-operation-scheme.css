@@ -397,6 +397,7 @@
   }
   .scheme-box-wrapper-2 .box-content {
     padding: 3rem 4rem 3rem 1.75rem;
+    transform: translateX(2px);
   }
   .scheme-box-wrapper-3 {
     grid-column: 2 / 3;
@@ -406,11 +407,21 @@
     padding: 3rem 4rem 3rem 1.75rem;
     transform: translate(3.75rem, -1rem);
   }
+  .scheme-box-wrapper-4 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
   .scheme-box-wrapper-4 .box-content {
     padding: 3rem 4rem 3rem 1.75rem;
+    transform: translate(14px, 0rem);
+  }
+  .scheme-box-wrapper-5 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
   }
   .scheme-box-wrapper-5 .box-content {
     padding: 3rem 4rem 3rem 1.75rem;
+    transform: translate(3.5rem, 0rem);
   }
   .scheme-box-wrapper-6 {
     grid-column: 1 / 2;
@@ -421,14 +432,14 @@
     transform: translateX(5rem);
   }
   .scheme-box-wrapper-1,
-  .scheme-box-wrapper-4,
-  .scheme-box-wrapper-6 {
+  .scheme-box-wrapper-6,
+  .scheme-box-wrapper-5 {
     display: flex;
     justify-content: flex-end;
   }
   .scheme-box-wrapper-2,
   .scheme-box-wrapper-3,
-  .scheme-box-wrapper-5 {
+  .scheme-box-wrapper-4 {
     display: flex;
     justify-content: flex-start;
   }
@@ -463,17 +474,31 @@
     transform: translate(1.9rem, -1rem);
   }
   .scheme-box-right-3::after {
-    transform: scaleX(1.05) translate(0.5rem);
+    transform: scaleX(1.1) translateX(1.25rem);
+  }
+  .scheme-box-left-4::before {
+    background-image: url('../images/scheme/5-modified.svg');
+    transform: translate(12px, 2px);
+  }
+  .scheme-box-left-4::after {
+    transform: scaleX(1) translateX(0rem);
+  }
+  .scheme-box-left-5::before {
+    background-image: url('../images/scheme/6-modified.svg');
+    transform: translate(3.425rem, 1px);
+  }
+  .scheme-box-left-5::after {
+    transform: scaleX(1) translateX(2.25rem);
   }
   .scheme-box-left-6 {
     transform: translateX(-3.8rem);
   }
   .scheme-box-left-6::before {
     background-image: url('../images/scheme/3-modified.svg');
-    transform: translate(3.25rem, 1rem);
+    transform: translate(3.25rem, 15px);
   }
   .scheme-box-left-6::after {
-    transform: scaleX(1.1) translate(2.25rem);
+    transform: scaleX(1.1) translateX(2.25rem);
   }
 }
 
