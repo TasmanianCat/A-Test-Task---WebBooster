@@ -502,6 +502,116 @@
   }
 }
 
+@media (max-width: 62.5em) {
+  .operation-scheme-block {
+    grid-template-rows: repeat(3, minmax(min-content, 230px));
+    align-items: start;
+    padding: 2.5rem 0 1.75rem 0;
+  }
+  .scheme-box-right-1,
+  .scheme-box-right-2,
+  .scheme-box-right-3,
+  .scheme-box-left-4,
+  .scheme-box-left-5,
+  .scheme-box-left-6 {
+    width: 340px;
+    height: auto;
+    transform: translate(0, 0);
+  }
+  .scheme-box-right-1 {
+    transform: translate(16px, 0);
+  }
+  .scheme-box-right-2 {
+    transform: translate(-16px, 0);
+  }
+  .scheme-box-right-3 {
+    transform: translate(-16px, -2px);
+  }
+  .scheme-box-left-4 {
+    transform: translate(6.5px, -2px);
+  }
+  .scheme-box-left-5 {
+    transform: translate(15px, -3px);
+  }
+  .scheme-box-left-6 {
+    transform: translate(-7px, -1px);
+  }
+  .scheme-box-right-1::before,
+  .scheme-box-right-2::before,
+  .scheme-box-right-3::before,
+  .scheme-box-left-4::before,
+  .scheme-box-left-5::before,
+  .scheme-box-left-6::before {
+    background-position: top;
+    transform: translate(0, 0);
+    background-size: contain;
+    height: 230px;
+  }
+  .scheme-box-right-1::after,
+  .scheme-box-right-2::after,
+  .scheme-box-right-3::after,
+  .scheme-box-left-4::after,
+  .scheme-box-left-5::after,
+  .scheme-box-left-6::after {
+    transform: translate(0, 0);
+  }
+  .scheme-box-right-2::after {
+    transform: scale(1.5) translate(-30px, 4px);
+  }
+  .scheme-box-right-3::after {
+    transform: scale(1.5) translate(-26px, 12px);
+  }
+  .scheme-box-left-4::after {
+    transform: scale(1.5) translate(-42px, 2px);
+  }
+  .scheme-box-left-5::after {
+    transform: scale(1.4) translate(-38px, 12px);
+  }
+  .scheme-box-left-6::after {
+    transform: scale(1.8) translate(-42px, 22px);
+  }
+  .scheme-box-wrapper-1 .box-content,
+  .scheme-box-wrapper-2 .box-content,
+  .scheme-box-wrapper-3 .box-content,
+  .scheme-box-wrapper-4 .box-content,
+  .scheme-box-wrapper-5 .box-content,
+  .scheme-box-wrapper-6 .box-content {
+    padding: 1.5rem 1rem 0.25rem 1.5rem;
+    gap: 0.25rem;
+    grid-template-rows: 2.75rem 1fr;
+    transform: translate(0, 0);
+  }
+  .scheme-box-wrapper-1 .box-content,
+  .scheme-box-wrapper-4 .box-content {
+    transform: translate(-6px, 0);
+  }
+  .scheme-box-wrapper-5 .box-content {
+    transform: translate(-5px, 0);
+  }
+  .scheme-box-wrapper-2 .box-content,
+  .scheme-box-wrapper-3 .box-content,
+  .scheme-box-wrapper-6 .box-content {
+    transform: translate(17px, 0);
+  }
+  .box-head .box-number h3 {
+    font-size: 1.75rem;
+    margin-top: -2px;
+  }
+  .box-head {
+    gap: 0.5rem;
+    padding-right: 1rem;
+  }
+  .box-head .box-title h4 {
+    font-size: 0.9rem;
+  }
+  .box-text-info {
+    padding: 0 1.25rem 0.5rem 2.5rem;
+  }
+  .box-text .box-text-info p {
+    font-size: 0.95rem;
+  }
+}
+
 /*! *********************** SCHEME ************************* */
 
 .operation-scheme-button {
