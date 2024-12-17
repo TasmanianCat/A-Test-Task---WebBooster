@@ -168,7 +168,7 @@
 /* Width 600px */
 @media (max-width: 37.5em) {
   .main-benefits {
-    padding: 3rem 1rem 4rem 1rem;
+    padding: 3rem 1rem 3.5rem 1rem;
   }
   .benefits-title h2 {
     font-size: 2rem;

@@ -46,3 +46,25 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.style.display = 'none';
   }
 });
+
+// Accordion control
+document.addEventListener('DOMContentLoaded', () => {
+  const accordions = document.querySelectorAll('.faq-accordion details');
+
+  accordions.forEach((accordion) => {
+    accordion.addEventListener('toggle', () => {
+      // Close other open details
+      if (accordion.open) {
+        accordions.forEach((item) => {
+          if (item !== accordion) {
+            item.removeAttribute('open');
+          }
+        });
+      }
+
+      // Update aria-expanded dynamically
+      const summary = accordion.querySelector('summary');
+      summary.setAttribute('aria-expanded', accordion.open);
+    });
+  });
+});
