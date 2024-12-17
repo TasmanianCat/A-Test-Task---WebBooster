@@ -1,7 +1,80 @@
 footer {
-  height: 177px;
+  display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 11.1rem;
   background-color: rgba(51, 51, 51, 1);
+}
+
+.bottom-menu {
+  display: flex;
+  width: 100%;
+  max-width: 87rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 11.1rem;
+  background-color: rgba(51, 51, 51, 1);
+  padding: 0 3.5rem;
+  gap: 2rem;
+}
+
+.bottom-menu-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.bottom-menu-link {
+  display: inline-block;
+}
+
+.bottom-menu-link:first-child {
+  display: none;
+}
+
+.bottom-menu-link a {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'FuturaLightCTT';
+  font-size: 1.125rem;
+  font-weight: 300;
+  transition: 0.2s ease-in-out;
+}
+
+.bottom-menu-link a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.bottom-menu-cta-btn {
+  text-transform: uppercase;
+  font-family: 'FuturaFuturisCRegular';
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  background-color: rgba(150, 154, 247, 1);
+  height: 3.5rem;
+  width: 16.3125rem;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.bottom-menu-cta-btn:hover {
+  opacity: 0.85;
+}
+
+/* Width 1360px */
+@media (max-width: 85em) {
+  .bottom-menu-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, 2rem));
+    row-gap: 0.5rem;
+  }
 }
 
 /* Width 1280px */
@@ -10,18 +83,44 @@ footer {
 
 /* Width 1180px */
 @media (max-width: 73.75em) {
+  footer {
+    padding: 5rem 0;
+  }
+  .bottom-menu {
+    flex-direction: column;
+  }
 }
 
 /* Width 1080px */
 @media (max-width: 67.5em) {
+  .bottom-menu-links {
+    gap: 1.5rem;
+  }
 }
 
 /* Width 660px */
 @media (max-width: 41.25em) {
+  .bottom-menu {
+    padding: 0 1.5rem;
+  }
 }
 
 /* Width 600px */
 @media (max-width: 37.5em) {
+  .bottom-menu {
+    padding: 0 1rem;
+  }
+  .bottom-menu-links {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(min-content, 2rem));
+    column-gap: 3rem;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  .bottom-menu-cta-btn {
+    height: 3rem;
+    font-size: 1rem;
+  }
 }
 
 /* Width 530px */
