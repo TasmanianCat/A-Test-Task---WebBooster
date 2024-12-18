@@ -84,8 +84,26 @@ li {
 
 html {
   height: 100%;
-  scroll-behavior: smooth;
+  scroll-padding: 5rem;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* :target {
+  scroll-margin: 5rem;
+  animation: target 1s;
+} */
+
+/* @keyframes target {
+  to {
+    outline: 5px solid red;
+    outline-offset: 15px;
+  }
+} */
 
 body {
   min-height: 100%;

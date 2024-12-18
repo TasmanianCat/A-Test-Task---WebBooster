@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Change color for the first strin of the TITLE
+// Change color for the first string of the TITLE
 document.addEventListener('DOMContentLoaded', () => {
   const firstSpanTitle = document.querySelector('.title-span-1');
   const spanScrollThreshold = 112; // = 7rem
@@ -81,10 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentIndex = 0;
   let isTransitioning = false;
 
-  console.log(carousel.clientHeight + 'px: This is hieght of the carousel');
-  console.log(carousel.clientWidth + 'px: This is width of the carousel');
-  console.log(itemCount + ' units: This is number of carousel items');
-  console.log(itemWidth + 'px: This is width of the carousel item');
+  // console.log(carousel.clientHeight + 'px: This is hieght of the carousel');
+  // console.log(carousel.clientWidth + 'px: This is width of the carousel');
+  // console.log(itemCount + ' units: This is number of carousel items');
+  // console.log(itemWidth + 'px: This is width of the carousel item');
 
   // 1. Clone first and last items for seamless looping
   const firstClone = carouselItems[0].cloneNode(true);
