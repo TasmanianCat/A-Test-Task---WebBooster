@@ -77,19 +77,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const carouselItems = Array.from(document.querySelectorAll('.carousel-item'));
   const itemCount = carouselItems.length;
-  const itemWidth = carouselItems[0].offsetWidth + 17.5; // Item width + gap
+  const itemWidth = carouselItems[0].offsetWidth + 17; // Item width + gap
   let currentIndex = 0;
   let isTransitioning = false;
 
+  console.log(carousel.clientHeight + 'px: This is hieght of the carousel');
+  console.log(carousel.clientWidth + 'px: This is width of the carousel');
+  console.log(itemCount + ' units: This is number of carousel items');
+  console.log(itemWidth + 'px: This is width of the carousel item');
+
   // 1. Clone first and last items for seamless looping
   const firstClone = carouselItems[0].cloneNode(true);
+  const secondClone = carouselItems[1].cloneNode(true);
+  const thirdClone = carouselItems[2].cloneNode(true);
+  const fourthClone = carouselItems[3].cloneNode(true);
+  const fifthClone = carouselItems[4].cloneNode(true);
   const lastClone = carouselItems[itemCount - 1].cloneNode(true);
 
-  carousel.appendChild(firstClone); // Clone of first at the end
+  carousel.appendChild(firstClone); // Clone of first item at the end
+  carousel.appendChild(secondClone); // Clone of second item at the end
+  carousel.appendChild(thirdClone); // Clone of third item at the end
+  carousel.appendChild(fourthClone); // Clone of fourth item at the end
+  carousel.appendChild(fifthClone); // Clone of fifth item at the end
   carousel.insertBefore(lastClone, carouselItems[0]); // Clone of last at the beginning
 
   // 2. Update the carousel position to start at the first real item
-  const totalItems = itemCount + 2; // Clones included
+  const totalItems = itemCount + 1; // Clones included
   carousel.style.transform = `translateX(-${itemWidth}px)`; // Start position
 
   // 3. Move Carousel to Next or Previous
@@ -139,5 +152,33 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   carouselContainer.addEventListener('mouseleave', () => {
     autoScroll = setInterval(() => moveToIndex(currentIndex + 1), 3000);
+  });
+
+  // Initialize swipe variables
+  let startX = 0;
+  let endX = 0;
+  const threshold = 50; // Minimum swipe distance to register as a swipe
+
+  // 7. Swipe Events for Mobile
+  carousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  carousel.addEventListener('touchmove', (e) => {
+    endX = e.touches[0].clientX;
+  });
+
+  carousel.addEventListener('touchend', () => {
+    const swipeDistance = endX - startX;
+
+    if (Math.abs(swipeDistance) > threshold) {
+      if (swipeDistance > 0) {
+        // Swipe Right (Previous Item)
+        moveToIndex(currentIndex - 1);
+      } else {
+        // Swipe Left (Next Item)
+        moveToIndex(currentIndex + 1);
+      }
+    }
   });
 });
